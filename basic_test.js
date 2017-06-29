@@ -57,7 +57,7 @@ Feature('CodeceptJS demo');
 Scenario('Custom Func Test', (I) => {
     I.loginAS01();
     I.see('Provisioning Client');
-    I.asdf();
+    //   I.asdf();
     //I.see('Welcome to the Provisioning Client');
     //I.see('Logged in as: admin');
     //I.see("Services");
