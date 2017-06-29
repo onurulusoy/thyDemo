@@ -4,7 +4,7 @@
     "output": "./output",
     "helpers": {
         "WebDriverIO": {
-            "url": "https://www.google.com.tr/",
+            "url": "https://www.flypgs.com/",
             "browser": "chrome"
         }
     },

@@ -1,15 +1,16 @@
 Feature('CodeceptJS demo');
 
-// Scenario('check Welcome page on site', (I) => {
-//     I.amOnPage('/');
-//     I.see('Gmail');
-//     I.fillField('q', 'hasan kaya');
-//     I.pressKey("Enter"); //will be deprecated soon
-//     I.wait(3);
-//     I.see("Hasan Kaya Profiles | Facebook");
-//     I.click("Hasan Kaya Profiles | Facebook");
-//     I.saveScreenshot("test.jpg");
-// })
+Scenario('check Welcome page on site', (I) => {
+    I.amOnPage('/');
+    I.see('Ucuz Uçak Bileti');
+    I.see('PEGASUS');
+    //     I.fillField('q', 'hasan kaya');
+    //     I.pressKey("Enter"); //will be deprecated soon
+    //     I.wait(3);
+    //     I.see("Hasan Kaya Profiles | Facebook");
+    //     I.click("Hasan Kaya Profiles | Facebook");
+    I.saveScreenshot("mainPage.jpg");
+});
 
 // Scenario('check another test', (I) => {
 //     I.amOnPage('http://www.facebook.com');
@@ -54,18 +55,18 @@ Feature('CodeceptJS demo');
 //     I.tryThat();
 // })
 
-Scenario('Custom Func Test', (I) => {
-    I.loginAS01();
-    I.see('Provisioning Client');
-    //   I.asdf();
-    //I.see('Welcome to the Provisioning Client');
-    //I.see('Logged in as: admin');
-    //I.see("Services");
-    //I.click('//*[@id="jbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id_jsp_891425604_7"]/span'); //services
-    //    I.selectOption('Services', 'Resources');
-    //    I.wait(1);
-    //    I.click('//*[@id="refjbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id32"]'); //announcements
-    //    I.wait(1);
-    //    I.click('//*[@id="jbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id49"]'); //branding
-    //    I.wait(2);
-});
+//Scenario('Custom Func Test', (I) => {
+//I.loginAS01();
+//I.see('Provisioning Client');
+//   I.asdf();
+//I.see('Welcome to the Provisioning Client');
+//I.see('Logged in as: admin');
+//I.see("Services");
+//I.click('//*[@id="jbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id_jsp_891425604_7"]/span'); //services
+//    I.selectOption('Services', 'Resources');
+//    I.wait(1);
+//    I.click('//*[@id="refjbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id32"]'); //announcements
+//    I.wait(1);
+//    I.click('//*[@id="jbpns_2fprov_2fdefault_2fProvMainMenuWindowsnpbj:j_id_jsp_891425604_0:j_id_jsp_891425604_6:j_id49"]'); //branding
+//    I.wait(2);
+//});

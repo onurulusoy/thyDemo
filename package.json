@@ -10,6 +10,7 @@
         "mochawesome": "^2.2.0",
         "sync-request": "^4.0.3",
         "request": "^2.81.0",
-        "https": "*"
+        "https": "*",
+        "selenium-standalone": "*"
     }
 }

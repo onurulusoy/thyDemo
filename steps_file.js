@@ -3,7 +3,7 @@
 var https = require('https');
 var request = require('sync-request');
 const assert = require('assert');
-var $ = require("jquery");
+//var $ = require("jquery");
 
 
 
