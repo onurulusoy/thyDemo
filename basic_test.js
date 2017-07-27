@@ -2,11 +2,19 @@ Feature('CodeceptJS demo');
 
 Scenario('check Welcome page on site', (I) => {
     I.amOnPage('/');
-    I.see('Ucuz Uçak Bileti');
-    I.see('PEGASUS');
-    //     I.fillField('q', 'hasan kaya');
-    //     I.pressKey("Enter"); //will be deprecated soon
-    //     I.wait(3);
+    I.see('Uçuş Planlama');
+    I.checkOption('//*[@id="Main-Quick-Search-Ticket"]/div[1]/ul/li[2]/input');
+    I.click('//*[@id="Main-Quick-Search-Ticket"]/div[3]/div[2]/div[1]/span[1]');
+    I.selectOption('city_id', 'İstanbul Sabiha Gokcen Havalimanı');
+    I.click('//*[@id="Main-Quick-Search-Ticket"]/div[3]/div[3]/div[1]/span[1]');
+    I.click('/html/body/div[2]/div[4]/div/div[1]/div[1]/div[3]/div[2]/div[1]/form/div[3]/div[3]/div[1]/span[2]/span[2]/select/option[21]');
+    I.click('/html/body/div[2]/div[4]/div/div[1]/div[1]/div[3]/div[2]/div[1]/form/div[3]/div[2]/div[2]/input');
+    I.click('/html/body/div[2]/div[4]/div/div[1]/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[2]/div/div[3]/table/tbody/tr[2]/td[4]');
+    I.click('/html/body/div[2]/div[4]/div/div[1]/div[1]/div[3]/div[2]/div[1]/form/div[5]/button');
+    //I.click('//*[@id="calendar-100000001"]/div[3]/table/tbody/tr[1]/td[3]');
+    //I.click('//*[@id="calendar-100000002"]/div[3]/table/tbody/tr[1]/td[6]');
+    //I.click("Uçuş Ara");
+    I.wait(10);
     //     I.see("Hasan Kaya Profiles | Facebook");
     //     I.click("Hasan Kaya Profiles | Facebook");
     I.saveScreenshot("mainPage.jpg");
